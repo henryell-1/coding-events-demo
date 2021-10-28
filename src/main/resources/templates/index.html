@@ -6,6 +6,9 @@
 <h1>Coding Events</h1>
 
 <header th:replace="fragments :: header"></header>
+<td>
+    <a th:href="@{/events/edit/{id}(id=${event.id})}">Edit</a>
+</td>
 
 </body>
 </html>
