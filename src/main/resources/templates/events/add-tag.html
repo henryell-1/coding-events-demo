@@ -8,10 +8,11 @@
 <form method="post">
 
     <div class="form-group">
-        <input type="hidden" th:value="${event}">
+        <input type="hidden" th:value="${event}" th:field="${eventTag.event}">
         <select th:field="${eventTag.tag}">
-            <option th:each="tag : ${tags}">
-                    th:value=
+            <option th:each="tag : ${tags}"
+                    th:value="${tag.id}"
+                    th:text="${tag.name}">
 
             </option>
 
